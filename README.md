@@ -159,6 +159,10 @@ List out the members who have not put any Uniform or Equipment Orders and the se
    
    Justification: Managers of the teams need to know which players have not put in an order for any Uniforms or Equipment. This is crucial for the safety of the members as they should not be playing in any of the sessions without the proper equipment. If the player has been in sessions without the proper saftey equipment and uniforms, they should be notified and taken out until they have what they need.
 
+   Image for Query 5: 
+   ![image](https://github.com/ryannair02/MIST4610-Project1/assets/163185043/dee03459-9da8-4d69-b2df-ea44f36f2573)
+
+
 SQL code for Query 5:
   
    SELECT M.memberID, M.memberName, T.teamID, T.ageGroup, T.skillLevel, TS.sessionID, TS.date AS 'Session Date', TS.time AS 'Session Time', TS.location AS 'Session Location'

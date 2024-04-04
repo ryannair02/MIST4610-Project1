@@ -75,7 +75,9 @@ To effectively manage our operations and maintain detailed records, the database
 
 
 
-**Data Dictionary**
+**Link to access google doc with data dictionary and queries and data model**
+https://docs.google.com/document/d/1J_VV84QetjjWXdCdk3BOpeR5jTU0nQzsBZr7BnXAI-s/edit?usp=sharing
+
 
 
 

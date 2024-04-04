@@ -154,7 +154,8 @@ Simple Queries:
 
 Complex Queries: 
 
- List out the members who have not put any Uniform or Equipment Orders and the sessions they have played in.
+Query 5:
+List out the members who have not put any Uniform or Equipment Orders and the sessions they have played in.
    
    Justification: Managers of the teams need to know which players have not put in an order for any Uniforms or Equipment. This is crucial for the safety of the members as they should not be playing in any of the sessions without the proper equipment. If the player has been in sessions without the proper saftey equipment and uniforms, they should be notified and taken out until they have what they need.
 
@@ -170,6 +171,7 @@ JOIN `Uniform Orders` UO ON OD.productID = UO.productID
 WHERE OD.memberID = M.memberID) ORDER BY M.memberID;
 
 
+Query 6:
 List the top Supplier by Total Order Amount
    
    Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.
@@ -187,6 +189,7 @@ ORDER BY TotalOrderAmount DESC;
 Image for Query 6: <img width="411" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/cd549893-4e7e-4a38-9335-389cf7cf4b92">
 
 
+Query 7:
 Total Number of Injuries by Team
    
    Justification: Team-level injury statistics are crucial for assessing the overall injury burden within each team. Team managers and coaches can use this information to evaluate the effectiveness of their training programs, identify teams at higher risk of injuries, and allocate resources for injury prevention measures accordingly.
@@ -201,7 +204,10 @@ GROUP BY `Teams`.`teamID`;
 
 Image for Query 7: <img width="277" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/b2f1b98f-1cfd-4055-a97e-ebf00dba8efe">
 
-Justification: Display in a procedure the players, age group, and teamID while calling a particular teamID.
+Query 8:
+Display in a procedure the players, age group, and teamID while calling a particular teamID.
+
+Justification:
 This query is helpful for the club to quickly access the list of players, their age group, and the teamID of a particular team. This query would assist a club admin when dealing with daily operations of the club regarding a particular team and their members.
 
 
@@ -218,6 +224,7 @@ CREATE PROCEDURE membersOfTeams(IN theTeamID INT)
 ![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/87647fca-9362-4b22-b61b-919d4530bd3f)
 
 
+Query 9:
 Identify teams with more than 2 members aged below 18.
 
 Justification: Ensuring compliance with labor laws and promoting the well-being of younger team members are crucial responsibilities for managers. Identifying teams with more than two members aged below 18 enables managers to assess whether these teams adhere to legal regulations regarding the employment of minors. Additionally, it allows managers to take appropriate actions such as adjusting team compositions, providing additional supervision, or implementing training programs tailored to the needs of younger team members. By proactively identifying such teams, managers can foster a safe and supportive work environment for all team members, comply with legal requirements, and uphold ethical standards in workforce management.
@@ -234,7 +241,8 @@ HAVING TotalMembers > 2;
 Image for Query 9: <img width="402" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/347f6d54-2877-406f-80bf-6a010e9bfb00">
  
  
- List all teams along with the count of members and the average age of members in each team.
+Query 10: 
+List all teams along with the count of members and the average age of members in each team.
   
    Justification: Understanding team composition and demographics is essential for effective team management and resource allocation. By listing all teams along with the count of members and the average age of members in each team, managers gain valuable insights into team dynamics, diversity, and potential skill gaps. This information enables managers to assess team performance, identify training needs, and allocate resources appropriately to support team development and productivity. Additionally, knowing the average age of team members allows managers to tailor communication and leadership strategies to suit the needs of different age groups within the teams, fostering a cohesive and inclusive work environment.
 

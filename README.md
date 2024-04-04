@@ -1,7 +1,7 @@
 # MIST4610-Project1
 
-Team Name:
-Group 4
+**Team Name:**
+**Group 4**
 
 Team Members:
 

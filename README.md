@@ -15,14 +15,14 @@ Pasupuleti, Chaitanya, [@cp12312112](https://github.com/cp12312112)
 
 Valladares, Matthew, [@MatthewValladares](https://github.com/MatthewValladares)
 
-Problem Description:
+**Problem Description**:
 
 "Goal Achievers FC" has recently been facing challenges with managing player injuries, recovery timelines, and ensuring the availability of players for upcoming matches and training sessions. The club has experienced situations where the lack of real-time information on player recovery status has led to inadequate preparation for games and training sessions being less effective. Additionally, there's been difficulty in reporting and analyzing the frequency and types of injuries to implement preventative measures.
 
-Data Model:
+**Data Model**:
 This model includes entities such as Coaches, Teams, Members, Injury Types, Training Facilities, Equipment, Suppliers, Uniform Orders, Injuries, Training Sessions, Matches, and Order Details. Below is a detailed description of each entity within your data model, its purpose, and how it relates to other entities.
 
-Entities and Their Descriptions:
+**Entities and Their Descriptions**:
 
 Coaches
 

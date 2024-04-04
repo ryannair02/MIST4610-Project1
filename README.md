@@ -89,6 +89,25 @@ Relationships: This table connects Members to Uniform Orders, tracking transacti
 **Link to access google doc with data dictionary and queries and data model**
 https://docs.google.com/document/d/1J_VV84QetjjWXdCdk3BOpeR5jTU0nQzsBZr7BnXAI-s/edit?usp=sharing
 
+**Data Dictionary**
+
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/958f6242-c381-4c2d-a8b0-985176a0a37d)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/9da61f4d-5dca-4b89-bc76-4b1ed7c6d45a)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/e9a11109-44b3-454e-b9e2-14f4a663b140)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/061fc578-cee3-46f2-8a23-ecad4d4d50f2)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/e4c6580b-71dc-418e-ae8c-69ec3d00effa)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/1c12ff02-7a6c-4f3d-8d35-956be46c9f49)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/33f9556e-dd9a-4234-a48c-245425653c96)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/c9adbe75-1843-424b-ae8f-6511bd136da5)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/0f5812f4-9398-498f-b854-d96f60088d9c)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/204e38c7-b948-4866-a991-27ca68be09d1)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/2c758146-23c2-4f7c-bfcd-69e378fffa31)
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/fa09dc08-c59a-425a-a493-e0682845f153)
+
+
+
+
+
 
 Simple Queries: 
 

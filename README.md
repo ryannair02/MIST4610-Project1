@@ -142,7 +142,14 @@ Simple Queries:
 
 Complex Queries: 
 
-1) 
+1) SQL code: SELECT m.memberID, m.memberName, t.teamID, t.ageGroup, t.skillLevel, ts.sessionID, ts.date AS 'Session Date', ts.time AS 'Session Time', ts.location AS 'Session Location'
+FROM Members m
+JOIN Teams t ON m.teamID = t.teamID
+JOIN `Training Sessions` ts ON t.teamID = ts.Teams_teamID
+WHERE NOT EXISTS (SELECT *
+FROM `Order Details` od 
+JOIN `Uniform Orders` uo ON od.productID = uo.productID
+WHERE od.memberID = m.memberID) ORDER BY m.memberID;
 
 2) List the top Supplier by Total Order Amount
    Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.

@@ -154,13 +154,7 @@ Image for Query 5: <img width="229" alt="image" src="https://github.com/ryannair
 2) List the top Supplier by Total Order Amount
    Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.
 
-Sql code for Query 6:   SELECT Suppliers.supplierID, Suppliers.address, Suppliers.phone,
-       SUM(`Uniform Orders`.price * `Uniform Orders`.quantity) AS TotalOrderAmount
-FROM Suppliers
-JOIN `Uniform Orders` ON Suppliers.supplierID = `Uniform Orders`.supplierID
-GROUP BY Suppliers.supplierID, Suppliers.address, Suppliers.phone
-ORDER BY TotalOrderAmount DESC
-LIMIT 1;
+Sql code for Query 6: SELECT Suppliers.supplierID, Suppliers.address, Suppliers.phone, SUM(`Uniform Orders`.price * `Uniform Orders`.quantity) AS TotalOrderAmount FROM Suppliers JOIN `Uniform Orders` ON Suppliers.supplierID = `Uniform Orders`.supplierID GROUP BY Suppliers.supplierID, Suppliers.address, Suppliers.phone ORDER BY TotalOrderAmount DESC;
 
 Image for Query 6: <img width="411" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/cd549893-4e7e-4a38-9335-389cf7cf4b92">
 

@@ -90,7 +90,7 @@ Relationships: This table connects Members to Uniform Orders, tracking transacti
 https://docs.google.com/document/d/1J_VV84QetjjWXdCdk3BOpeR5jTU0nQzsBZr7BnXAI-s/edit?usp=sharing
 
 
-Queries: 
+Simple Queries: 
 
 1) What are the coach's names and IDs who have more than 20 years of experience Order by years of experience descending.
    Justification: This query retrieves the names and IDs of coaches with over 20 years of experience, ordered by years of experience in descending order. It is valuable for the database as it identifies highly experienced coaches within the organization. Managers can use this information to assign leadership roles, mentor younger coaches, and allocate coaching resources effectively. Additionally, it aids in succession planning by identifying coaches nearing retirement age. Ultimately, this query supports informed decision-making and strategic management of coaching talent within the sports organization.
@@ -111,3 +111,81 @@ Queries:
       SQL code for Query 3:SELECT Teams_teamID, matchDate, opponent FROM Matches WHERE result = "win";
       
       Image for Query 3:<img width="203" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/3449530b-2351-4291-8149-77b12022b9e6">
+
+      4) What is the supplier ID and phone number of orders that have been canceled?
+         Justification: Managing supplier relationships and ensuring timely procurement are critical aspects of effective supply chain management. Identifying suppliers associated with canceled orders provides valuable insights for managers to address potential issues, negotiate better terms, and mitigate disruptions in the supply chain. By retrieving the supplier ID and phone number of canceled orders, managers can proactively communicate with suppliers, resolve issues promptly, and implement measures to prevent future order cancellations. This information facilitates effective supplier management, enhances operational resilience, and ensures continuity in procurement processes, ultimately contributing to the organization's overall efficiency and performance.
+
+      SQL code for Query 4: SELECT supplierID, phone FROM Suppliers Where orderStatus = 'Cancelled';
+
+         Image for Query 4: <img width="195" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/aac59f2b-ab03-435b-91f9-9b25a4dbf14b">
+
+
+Complex Queries: 
+
+1) Find the facility name and the total count of equipment in each facility
+   Justification:This query retrieves the total count of equipment in each facility along with the facility name. Managers can use this data to ensure each facility is adequately equipped and to track equipment distribution and usage.
+
+   SQL code for Query 5: Sql code: SELECT `Training Facilities`.`facilityName`, COUNT(`Equipment`.`equipmentID`) AS TotalEquipment
+FROM `Training Facilities`
+JOIN `Equipment` ON `Training Facilities`.`facilityID` = `Equipment`.`facilityID`
+GROUP BY `Training Facilities`.`facilityName`;
+
+Image for Query 5: <img width="229" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/dbdcf73a-f1a0-4d0b-95c4-04266328d5cf">
+
+2) List the top Supplier by Total Order Amount
+   Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.
+
+Sql code for Query 6:   SELECT Suppliers.supplierID, Suppliers.address, Suppliers.phone,
+       SUM(`Uniform Orders`.price * `Uniform Orders`.quantity) AS TotalOrderAmount
+FROM Suppliers
+JOIN `Uniform Orders` ON Suppliers.supplierID = `Uniform Orders`.supplierID
+GROUP BY Suppliers.supplierID, Suppliers.address, Suppliers.phone
+ORDER BY TotalOrderAmount DESC
+LIMIT 1;
+
+Image for Query 6: <img width="411" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/cd549893-4e7e-4a38-9335-389cf7cf4b92">
+
+3) Total Number of Injuries by Team
+   Justification:Team-level injury statistics are crucial for assessing the overall injury burden within each team. Team managers and coaches can use this information to evaluate the effectiveness of their training programs, identify teams at higher risk of injuries, and allocate resources for injury prevention measures accordingly.
+
+Sql code for Query 7: SELECT `Teams`.`teamID`, COUNT(`Injuries`.`injuryID`) AS TotalInjuries
+FROM `Teams`
+JOIN `Members` ON `Teams`.`teamID` = `Members`.`teamID`
+JOIN `Injuries` ON `Members`.`memberID` = `Injuries`.`Members_memberID`
+GROUP BY `Teams`.`teamID`;
+
+Image for Query 7: <img width="277" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/b2f1b98f-1cfd-4055-a97e-ebf00dba8efe">
+
+4) Determine the total number of matches played by each team
+   Justification: This query counts the total number of matches played by each team. It utilizes a left join between the Teams and Matches tables to capture all teams, even if they haven't played any matches yet.
+
+
+Sql code for Query 8: SELECT Teams.teamID, COUNT(Matches.matchID) AS TotalMatches
+FROM Teams
+JOIN Matches ON Teams.teamID = Matches.Teams_teamID
+GROUP BY Teams.teamID;
+
+Image for Query 8: <img width="153" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/f60bcd0f-068d-44d9-9762-0f235ebd4f62">
+
+5) Identify teams with more than 2 members aged below 18.
+Justification: Ensuring compliance with labor laws and promoting the well-being of younger team members are crucial responsibilities for managers. Identifying teams with more than two members aged below 18 enables managers to assess whether these teams adhere to legal regulations regarding the employment of minors. Additionally, it allows managers to take appropriate actions such as adjusting team compositions, providing additional supervision, or implementing training programs tailored to the needs of younger team members. By proactively identifying such teams, managers can foster a safe and supportive work environment for all team members, comply with legal requirements, and uphold ethical standards in workforce management.
+
+Sql Code for Query 9: SELECT Teams.teamID, COUNT(Members.memberID) AS TotalMembers
+FROM Teams
+JOIN Members ON Teams.teamID = Members.teamID
+WHERE YEAR(CURDATE()) - YEAR(Members.memberDOB) < 18
+GROUP BY Teams.teamID
+HAVING TotalMembers > 2;
+
+Image for Query 9: <img width="402" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/347f6d54-2877-406f-80bf-6a010e9bfb00">
+
+6)  List all teams along with the count of members and the average age of members in each team.
+   Justification: Understanding team composition and demographics is essential for effective team management and resource allocation. By listing all teams along with the count of members and the average age of members in each team, managers gain valuable insights into team dynamics, diversity, and potential skill gaps. This information enables managers to assess team performance, identify training needs, and allocate resources appropriately to support team development and productivity. Additionally, knowing the average age of team members allows managers to tailor communication and leadership strategies to suit the needs of different age groups within the teams, fostering a cohesive and inclusive work environment.
+
+
+Sql code: SELECT Teams.teamID, COUNT(Members.memberID) AS TotalMembers, AVG(YEAR(CURDATE()) - YEAR(Members.memberDOB)) AS AvgAge
+FROM Teams
+JOIN Members ON Teams.teamID = Members.teamID
+GROUP BY Teams.teamID;
+
+Image for Query 10: <img width="253" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/9fa2ecf1-8169-451d-b5f0-45a217ba0f2f">

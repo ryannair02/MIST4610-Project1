@@ -176,16 +176,21 @@ GROUP BY `Teams`.`teamID`;
 
 Image for Query 7: <img width="277" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/b2f1b98f-1cfd-4055-a97e-ebf00dba8efe">
 
-4) Determine the total number of matches played by each team
-   Justification: Understanding the match participation of each team is crucial for assessing team activity, performance, and workload. By determining the total number of matches played by each team, managers can gain insights into team engagement, competitive involvement, and overall performance levels. This information enables managers to identify high-performing teams, assess resource allocation, and plan future scheduling and training strategies effectively. Additionally, tracking match participation helps managers monitor team progress, identify trends, and make informed decisions to optimize team performance and achieve organizational goals.
+4) Display in a procedure the players, age group, and teamID while calling a particular teamID.
+This query is helpful for the club to quickly access the list of players, their age group, and the teamID of a particular team. This query would assist a club admin when dealing with daily operations of the club in regard to a particular team and their members.
 
 
-Sql code for Query 8: SELECT Teams.teamID, COUNT(Matches.matchID) AS TotalMatches
-FROM Teams
-JOIN Matches ON Teams.teamID = Matches.Teams_teamID
-GROUP BY Teams.teamID;
+Sql code for Query 8: 
+CREATE PROCEDURE membersOfTeams(IN theTeamID INT)
+  SELECT memberName, ageGroup, Teams.teamID
+  FROM al_Group_21479_G4.Teams
+  JOIN al_Group_21479_G4.Members ON Teams.teamID=Members.teamID
+  WHERE Teams.teamID = theTeamID; 
+   
+   CALL membersOfTeams(4);
 
-Image for Query 8: <img width="153" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/f60bcd0f-068d-44d9-9762-0f235ebd4f62">
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/165865808/87647fca-9362-4b22-b61b-919d4530bd3f)
+
 
 5) Identify teams with more than 2 members aged below 18.
 Justification: Ensuring compliance with labor laws and promoting the well-being of younger team members are crucial responsibilities for managers. Identifying teams with more than two members aged below 18 enables managers to assess whether these teams adhere to legal regulations regarding the employment of minors. Additionally, it allows managers to take appropriate actions such as adjusting team compositions, providing additional supervision, or implementing training programs tailored to the needs of younger team members. By proactively identifying such teams, managers can foster a safe and supportive work environment for all team members, comply with legal requirements, and uphold ethical standards in workforce management.

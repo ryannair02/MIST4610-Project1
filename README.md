@@ -113,7 +113,7 @@ Simple Queries:
 
 1) What are the coach's names and IDs who have more than 20 years of experience Order by years of experience descending.
 
-   Justification: This query retrieves the names and IDs of coaches with over 20 years of experience, ordered by years of experience in descending order. It is valuable for the database as it identifies highly experienced coaches within the organization. Managers can use this information to assign leadership roles, mentor younger coaches, and allocate coaching resources effectively. Additionally, it aids in succession planning by identifying coaches nearing retirement age. Ultimately, this query supports informed decision-making and strategic management of coaching talent within the sports organization.
+   Justification: This query retrieves the names and IDs of coaches with over 20 years of experience, ordered by years of experience in descending order. It is valuable for the database since it identifies highly experienced coaches in the organization. Managers use this information to assign leadership roles, mentor younger coaches, and distribute resources effectively. Also, it helps planning by finding out which coaches are near retirement age. This supports informed decision-making and management of coaching overall.
 
    SQL code for Query 1:
 
@@ -123,7 +123,7 @@ Simple Queries:
 
    2)List the equipment ID and date purchased for all equipment at Facility 4
 
-   Justification: Managers responsible for Facility 4 need to maintain an updated inventory of equipment to ensure operational efficiency and timely maintenance. By listing the equipment ID and date of purchase for all equipment at Facility 4, managers can accurately track the age of equipment, plan for maintenance schedules, and assess the need for equipment replacements or upgrades. This information enables effective asset management, cost control, and resource allocation within Facility 4, contributing to smooth operations and optimal utilization of equipment resources.
+   Justification: Managers responsible for Facility 4 need to have up to date inventory of equipment to ensure efficiency and proper maintenance. By listing the equipment ID and date of purchase for all equipment at Facility 4, managers can track the age of equipment, plan for maintenance schedules, and check the need for equipment replacements or upgrades. This will lead to smooth operations and utilization of equipment resources.
 
    SQL code for Query 2:
 
@@ -133,7 +133,7 @@ Simple Queries:
 
    3) List the team names who have won their match
 
-      Justification: Managers are keen on monitoring team performance and identifying successful teams within the organization to celebrate achievements, allocate resources effectively, and potentially replicate successful strategies across other teams. By listing the team names that have won their matches, managers gain valuable insights into the performance of individual teams, allowing them to recognize and reward success, identify areas for improvement, and allocate resources strategically. This information aids in fostering a culture of excellence, enhancing team morale, and driving overall organizational success.
+      Justification: Managers are need to monitor team performance and identify successful teams within the organization to celebrate their achievements, distribute resources, and help replicate successful strategies across other teams in their training programs. By listing the team names that have won their matches, managers get insights into the performance of individual teams which helps them identify areas for improvement in other team. This information aids them in enhancing their teams overall and lead them to success.
       
       SQL code for Query 3:
 
@@ -143,7 +143,7 @@ Simple Queries:
 
       4) What is the supplier ID and phone number of orders that have been canceled?
 
-         Justification: Managing supplier relationships and ensuring timely procurement are critical aspects of effective supply chain management. Identifying suppliers associated with canceled orders provides valuable insights for managers to address potential issues, negotiate better terms, and mitigate disruptions in the supply chain. By retrieving the supplier ID and phone number of canceled orders, managers can proactively communicate with suppliers, resolve issues promptly, and implement measures to prevent future order cancellations. This information facilitates effective supplier management, enhances operational resilience, and ensures continuity in procurement processes, ultimately contributing to the organization's overall efficiency and performance.
+         Justification: Managing supplier relationships and making sure teams get their orders on time are really important for managers. When they know which suppliers were involved in canceled orders, it helps them spot potential problems early. They can reach out to them quickly, sort things out, and try to avoid more cancellations later on. Having the supplier ID and contact info from canceled orders allows them to get in touch with them fast. 
 
       SQL code for Query 4:
 
@@ -196,7 +196,7 @@ Image for Query 6: <img width="411" alt="image" src="https://github.com/ryannair
 Query 7:
 Total Number of Injuries by Team
    
-   Justification: Team-level injury statistics are crucial for assessing the overall injury burden within each team. Team managers and coaches can use this information to evaluate the effectiveness of their training programs, identify teams at higher risk of injuries, and allocate resources for injury prevention measures accordingly.
+   Justification: Team-level injury statistics are important for managers to check the overall injuries within each team. Team managers and coaches can use this information to evaluate the effectiveness of their training programs, identify teams at higher risk of injuries, and appropriate resources for injury prevention measures accordingly.
 
 Sql code for Query 7: 
 
@@ -231,7 +231,7 @@ CREATE PROCEDURE membersOfTeams(IN theTeamID INT)
 Query 9:
 Identify teams with more than 2 members aged below 18.
 
-Justification: Ensuring compliance with labor laws and promoting the well-being of younger team members are crucial responsibilities for managers. Identifying teams with more than two members aged below 18 enables managers to assess whether these teams adhere to legal regulations regarding the employment of minors. Additionally, it allows managers to take appropriate actions such as adjusting team compositions, providing additional supervision, or implementing training programs tailored to the needs of younger team members. By proactively identifying such teams, managers can foster a safe and supportive work environment for all team members, comply with legal requirements, and uphold ethical standards in workforce management.
+Justification: It is crucial for managers to know which of the team's members are below 18 since that would make them minors. For minors in sports, there are several laws and regulations that must be followed or else the team and managers will get into much trouble. Through this, the managers will be able to spot if they have a lot of team members under 18. They can also give them proper training that is in compliance with the regulations and allocate funds towards this.
 
 Sql Code for Query 9: 
 
@@ -248,7 +248,7 @@ Image for Query 9: <img width="402" alt="image" src="https://github.com/ryannair
 Query 10: 
 List all teams along with the count of members and the average age of members in each team.
   
-   Justification: Understanding team composition and demographics is essential for effective team management and resource allocation. By listing all teams along with the count of members and the average age of members in each team, managers gain valuable insights into team dynamics, diversity, and potential skill gaps. This information enables managers to assess team performance, identify training needs, and allocate resources appropriately to support team development and productivity. Additionally, knowing the average age of team members allows managers to tailor communication and leadership strategies to suit the needs of different age groups within the teams, fostering a cohesive and inclusive work environment.
+   Justification: Understanding team composition and demographics is important for team management as well as for dividing resources the correct way. By listing all teams along with the count of members and the average age of members in each team, managers gain insights into team dynamics, diversity, and sometimes even skill gaps. This information will help the managers see team performance,  training needs, and allocation of resources  to support team development and productivity. Also, knowing the average age of team members allows managers to give proper communication and leadership strategies which fit the needs of different age groups in the teams, allowing for better training sessions.
 
 
 Sql code:

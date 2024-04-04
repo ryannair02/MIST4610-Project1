@@ -5,9 +5,13 @@ Group 4
 
 Team Members:
 Marko, Matthew, mm90925
+
 Muddala, Aniketh, anm36176
+
 Nair, Ryan, an94397
+
 Pasupuleti, Chaitanya, cvp78617
+
 Valladares, Matthew, mjv46711
 
 Problem Description:

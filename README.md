@@ -142,15 +142,7 @@ Simple Queries:
 
 Complex Queries: 
 
-1) Find the facility name and the total count of equipment in each facility
-   Justification:This query retrieves the total count of equipment in each facility along with the facility name. Managers can use this data to ensure each facility is adequately equipped and to track equipment distribution and usage.
-
-   SQL code for Query 5: Sql code: SELECT `Training Facilities`.`facilityName`, COUNT(`Equipment`.`equipmentID`) AS TotalEquipment
-FROM `Training Facilities`
-JOIN `Equipment` ON `Training Facilities`.`facilityID` = `Equipment`.`facilityID`
-GROUP BY `Training Facilities`.`facilityName`;
-
-Image for Query 5: <img width="229" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/dbdcf73a-f1a0-4d0b-95c4-04266328d5cf">
+1) 
 
 2) List the top Supplier by Total Order Amount
    Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.

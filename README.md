@@ -152,7 +152,7 @@ Simple Queries:
          Image for Query 4: <img width="195" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/aac59f2b-ab03-435b-91f9-9b25a4dbf14b">
 
 
-Complex Queries: 
+**Complex Queries:** 
 
 Query 5:
 List out the members who have not put any Uniform or Equipment Orders and the sessions they have played in.

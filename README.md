@@ -9,7 +9,7 @@ Marko, Matthew, @
 
 Muddala, Aniketh, anm36176
 
-Nair, Ryan, [@ryannair02](wwww.github.com)
+Nair, Ryan, [@ryannair02](https://github.com/ryannair02)
 
 Pasupuleti, Chaitanya, cvp78617
 

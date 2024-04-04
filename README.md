@@ -142,7 +142,10 @@ Simple Queries:
 
 Complex Queries: 
 
-1) SQL code:
+5) List out the members who have not put any Uniform or Equipment Orders and the sessions they have played in.
+   Justification: Managers of the teams need to know which players have not put in an order for any Uniforms or Equipment. This is crucial for the safety of the members as they should not be playing in any of the sessions without the proper equipment. If the player has been in sessions without the proper saftey equipment and uniforms, they should be notified and taken out until they have what they need.
+
+SQL code for Query 5:
    SELECT M.memberID, M.memberName, T.teamID, T.ageGroup, T.skillLevel, TS.sessionID, TS.date AS 'Session Date', TS.time AS 'Session Time', TS.location AS 'Session Location'
 FROM Members M
 JOIN Teams T ON M.teamID = T.teamID

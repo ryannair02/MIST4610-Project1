@@ -49,7 +49,7 @@ Purpose: Details about the club's facilities, including an ID, name, type, and l
 Relationships: Facilities are linked to Equipment, Training Sessions, and Matches to indicate where these activities or items are located.
 Equipment
 
-Purpose: Information on the club's equipment, including ID, date purchased, location, and the facility ID.
+Purpose: Information on the club's equipment, including ID, date purchased, location, and facility ID.
 Relationships: Equipment is tied to specific Training Facilities.
 
 Suppliers
@@ -59,7 +59,7 @@ Relationships: Suppliers are linked to Uniform Orders, indicating where the club
 
 Uniform Orders
 
-Purpose: Tracks orders for uniforms, including product ID, name, type, price, quantity, and the supplier ID.
+Purpose: Tracks orders for uniforms, including product ID, name, type, price, quantity, and supplier ID.
 Relationships: This table is connected to Suppliers and indirectly affects Members through distribution.
 
 Injuries
@@ -128,7 +128,7 @@ Simple Queries:
    3) List the team names who have won their match
       Justification: Managers are keen on monitoring team performance and identifying successful teams within the organization to celebrate achievements, allocate resources effectively, and potentially replicate successful strategies across other teams. By listing the team names that have won their matches, managers gain valuable insights into the performance of individual teams, allowing them to recognize and reward success, identify areas for improvement, and allocate resources strategically. This information aids in fostering a culture of excellence, enhancing team morale, and driving overall organizational success.
       
-      SQL code for Query 3:SELECT Teams_teamID, matchDate, opponent FROM Matches WHERE result = "win";
+      SQL code for Query 3: SELECT Teams_teamID, matchDate, opponent FROM Matches WHERE result = "win";
       
       Image for Query 3:<img width="203" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/3449530b-2351-4291-8149-77b12022b9e6">
 

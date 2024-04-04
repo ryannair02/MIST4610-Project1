@@ -127,6 +127,7 @@ Simple Queries:
 
    3) List the team names who have won their match
       Justification: Managers are keen on monitoring team performance and identifying successful teams within the organization to celebrate achievements, allocate resources effectively, and potentially replicate successful strategies across other teams. By listing the team names that have won their matches, managers gain valuable insights into the performance of individual teams, allowing them to recognize and reward success, identify areas for improvement, and allocate resources strategically. This information aids in fostering a culture of excellence, enhancing team morale, and driving overall organizational success.
+      
       SQL code for Query 3:SELECT Teams_teamID, matchDate, opponent FROM Matches WHERE result = "win";
       
       Image for Query 3:<img width="203" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/3449530b-2351-4291-8149-77b12022b9e6">

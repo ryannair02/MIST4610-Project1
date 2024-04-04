@@ -13,7 +13,7 @@ Nair, Ryan, [@ryannair02](https://github.com/ryannair02)
 
 Pasupuleti, Chaitanya, [@ryannair02](https://github.com/ryannair02)
 
-Valladares, Matthew, [@ryannair02](https://github.com/ryannair02)
+Valladares, Matthew, [@MatthewValladares](https://github.com/MatthewValladares)
 
 Problem Description:
 

@@ -147,7 +147,7 @@ Complex Queries:
 2) List the top Supplier by Total Order Amount
    Justification: This information is crucial for evaluating supplier performance, optimizing inventory management, and making strategic procurement decisions, ensuring efficient and cost-effective supply chain operations.
 
-Sql code for Query 6:SELECT Suppliers.supplierID, Suppliers.address, Suppliers.phone,
+SQL code for Query 6: SELECT Suppliers.supplierID, Suppliers.address, Suppliers.phone,
        SUM(`Uniform Orders`.price * `Uniform Orders`.quantity) AS TotalOrderAmount
 FROM Suppliers
 JOIN `Uniform Orders` ON Suppliers.supplierID = `Uniform Orders`.supplierID

@@ -157,7 +157,7 @@ GROUP BY `Teams`.`teamID`;
 Image for Query 7: <img width="277" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/b2f1b98f-1cfd-4055-a97e-ebf00dba8efe">
 
 4) Determine the total number of matches played by each team
-   Justification: This query counts the total number of matches played by each team. It utilizes a left join between the Teams and Matches tables to capture all teams, even if they haven't played any matches yet.
+   Justification: Understanding the match participation of each team is crucial for assessing team activity, performance, and workload. By determining the total number of matches played by each team, managers can gain insights into team engagement, competitive involvement, and overall performance levels. This information enables managers to identify high-performing teams, assess resource allocation, and plan future scheduling and training strategies effectively. Additionally, tracking match participation helps managers monitor team progress, identify trends, and make informed decisions to optimize team performance and achieve organizational goals.
 
 
 Sql code for Query 8: SELECT Teams.teamID, COUNT(Matches.matchID) AS TotalMatches

@@ -1,8 +1,14 @@
 # MIST4610-Project1
 
-Team Members: Ryan Nair, Matthew Marko, Aniketh Muddala, Chaitanya Pasupuleti, Matthew Valladares
+Team Name:
+Group 4
 
-<img width="468" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/150095773/a6a7dbb0-d380-451f-88d7-1e371f18ba61">
+Team Members:
+Marko, Matthew, mm90925
+Muddala, Aniketh, anm36176
+Nair, Ryan, an94397
+Pasupuleti, Chaitanya, cvp78617
+Valladares, Matthew, mjv46711
 
 **Chat GPT Write-Up**
 Business Overview

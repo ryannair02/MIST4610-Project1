@@ -10,6 +10,10 @@ Nair, Ryan, an94397
 Pasupuleti, Chaitanya, cvp78617
 Valladares, Matthew, mjv46711
 
+Problem Description:
+
+"Goal Achievers FC" has recently been facing challenges with managing player injuries, recovery timelines, and ensuring the availability of players for upcoming matches and training sessions. The club has experienced situations where the lack of real-time information on player recovery status has led to inadequate preparation for games and training sessions being less effective. Additionally, there's been difficulty in reporting and analyzing the frequency and types of injuries to implement preventative measures.
+
 **Chat GPT Write-Up**
 Business Overview
 Core Activities: The club focuses on training sessions for different age groups, organizing friendly matches and participating in competitive leagues. We also host soccer camps and clinics.

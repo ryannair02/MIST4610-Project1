@@ -255,3 +255,6 @@ JOIN Members ON Teams.teamID = Members.teamID
 GROUP BY Teams.teamID;
 
 Image for Query 10: <img width="253" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/9fa2ecf1-8169-451d-b5f0-45a217ba0f2f">
+
+![image](https://github.com/ryannair02/MIST4610-Project1/assets/163185043/bca2d694-6a53-4520-acac-d7384586dce3)
+

@@ -1,4 +1,4 @@
-#MIST4610-Project1
+# MIST4610-Project1
 
 Team Name:
 Group 4
@@ -25,5 +25,24 @@ To effectively manage our operations and maintain detailed records, the database
 https://docs.google.com/document/d/1J_VV84QetjjWXdCdk3BOpeR5jTU0nQzsBZr7BnXAI-s/edit?usp=sharing
 
 
+Queries: 
 
+1) What are the coach's names and IDs who have more than 20 years of experience Order by years of experience descending.
+   Justification: This query retrieves the names and IDs of coaches with over 20 years of experience, ordered by years of experience in descending order. It is valuable for the database as it identifies highly experienced coaches within the organization. Managers can use this information to assign leadership roles, mentor younger coaches, and allocate coaching resources effectively. Additionally, it aids in succession planning by identifying coaches nearing retirement age. Ultimately, this query supports informed decision-making and strategic management of coaching talent within the sports organization.
 
+   SQL code for Query 1: SELECT staffName, yearsOfExperience FROM Coaches WHERE yearsOfExperience > 20 ORDER BY yearsOfExperience DESC;
+
+   Image for Query 1: <img width="205" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/7d611dc2-e2f6-4da8-a7c7-90c85a469f0a">
+
+   2)List the equipment ID and date purchased for all equipment at Facility 4
+   Justification: Managers responsible for Facility 4 need to maintain an updated inventory of equipment to ensure operational efficiency and timely maintenance. By listing the equipment ID and date of purchase for all equipment at Facility 4, managers can accurately track the age of equipment, plan for maintenance schedules, and assess the need for equipment replacements or upgrades. This information enables effective asset management, cost control, and resource allocation within Facility 4, contributing to smooth operations and optimal utilization of equipment resources.
+
+   SQL code for Query 2: SELECT equipmentID, datePurchased FROM Equipment WHERE facilityID = 4;
+
+   Image for Query 2: <img width="220" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/e0839981-c9c8-40f4-8a53-cb6a56f312d1">
+
+   3) List the team names who have won their match
+      Justification: Managers are keen on monitoring team performance and identifying successful teams within the organization to celebrate achievements, allocate resources effectively, and potentially replicate successful strategies across other teams. By listing the team names that have won their matches, managers gain valuable insights into the performance of individual teams, allowing them to recognize and reward success, identify areas for improvement, and allocate resources strategically. This information aids in fostering a culture of excellence, enhancing team morale, and driving overall organizational success.
+      SQL code for Query 3:SELECT Teams_teamID, matchDate, opponent FROM Matches WHERE result = "win";
+      
+      Image for Query 3:<img width="203" alt="image" src="https://github.com/ryannair02/MIST4610-Project1/assets/120529297/3449530b-2351-4291-8149-77b12022b9e6">

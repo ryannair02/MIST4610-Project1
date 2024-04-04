@@ -81,6 +81,8 @@ Order Details
 Purpose: Captures details of orders placed by members, including order ID, price, purchase date, member ID, and product ID.
 Relationships: This table connects Members to Uniform Orders, tracking transactions within the club.
 
+**Data Model**
+
 ![image](https://github.com/ryannair02/MIST4610-Project1/assets/150095773/3048c7d6-f865-4922-97a7-dde5bb20ec65)
 
 
